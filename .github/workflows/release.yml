@@ -14,11 +14,11 @@ jobs:
         uses: vimtor/action-zip@v1.2
         with:
           files: src/**
-          dest: dist/Arachnophobia.zip
+          dest: dist/Arachnophobia-${{ github.event.release.tag_name }}.zip
       - name: Upload GitHub release
         uses: AButler/upload-release-assets@v2.0
         with:
-          files: 'dist/Arachnophobia.zip'
+          files: 'dist/Arachnophobia-${{ github.event.release.tag_name }}.zip'
           repo-token: ${{ secrets.TOKEN_GITHUB }}
       - name: Upload to Modrinth
         uses: cloudnode-pro/modrinth-publish@v2
@@ -38,4 +38,4 @@ jobs:
             1.19.x
             1.20.x
             1.21.x
-          files: dist/Arachnophobia.zip
+          files: dist/Arachnophobia-${{ github.event.release.tag_name }}.zip
