@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Arachnophobia pack - Make spiders cats!",
+    "pack_format": 81,
+    "supported_formats": {
+      "min_inclusive": 1,
+      "max_inclusive": 200
+    }
+  }
+}

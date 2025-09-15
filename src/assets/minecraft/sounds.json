@@ -1,0 +1,12 @@
+{
+  "entity.spider.ambient": {
+    "sounds": ["mob/spider/meow"],
+    "subtitle": "subtitles.entity.spider.ambient",
+    "replace": true
+  },
+  "entity.spider.hurt": {
+    "sounds": ["mob/spider/meow"],
+    "subtitle": "subtitles.entity.spider.hurt",
+    "replace": true
+  }
+}
