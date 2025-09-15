@@ -20,22 +20,3 @@ jobs:
         with:
           files: 'dist/Arachnophobia-${{ github.event.release.tag_name }}.zip'
           repo-token: ${{ secrets.TOKEN_GITHUB }}
-      - name: Upload to Modrinth
-        uses: cloudnode-pro/modrinth-publish@v2
-        with:
-          token: ${{ secrets.MODRINTH }}
-          project: S0jHcAjs
-          name: ${{ github.event.release.name }}
-          version: ${{ github.event.release.tag_name }}
-          changelog: ${{ github.event.release.body }}
-          loaders: |-
-            minecraft
-          game-versions: |-
-            1.12.x
-            1.16.x
-            1.17.x
-            1.18.x
-            1.19.x
-            1.20.x
-            1.21.x
-          files: dist/Arachnophobia-${{ github.event.release.tag_name }}.zip
