@@ -37,3 +37,8 @@ jobs:
             1.20.x
             1.21.x
           files: Arachnophobia-${{ github.event.release.tag_name }}.zip
+          dependencies: |-
+            [{
+              "project_id": "4I1XuqiY",
+              "type": "required"
+            }]
