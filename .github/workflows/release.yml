@@ -35,5 +35,5 @@ jobs:
           dependencies: |-
             [{
               "project_id": "4I1XuqiY",
-              "type": "required"
+              "dependency_type": "required"
             }]
