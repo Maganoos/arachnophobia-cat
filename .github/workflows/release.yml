@@ -29,13 +29,8 @@ jobs:
           loaders: |-
             minecraft
           game-versions: |-
-            1.12.x
-            1.16.x
-            1.17.x
-            1.18.x
-            1.19.x
-            1.20.x
-            1.21.x
+            1.21.9
+            1.21.10
           files: Arachnophobia-${{ github.event.release.tag_name }}.zip
           dependencies: |-
             [{
